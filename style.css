@@ -1,8 +1,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+
+  .lead {
     font-size: 16px;
   }
-  
+
   textarea{
     background: transparent;
     border: none;
@@ -15,7 +19,7 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 15px solid black;
-    height: 30vh;
+    height: 33vh;
   }
    
   .saveBtn {
@@ -66,19 +70,21 @@ body {
 
 .empty {
   opacity: 0;
-  margin-bottom: 1%;
+
 }
 
 .saved {
   opacity: 1;
-  margin-bottom: 1%;
+
 }
 
 #status{  
-  font-size: 25px;
+  font-size: 20px;
   color: green;
 }
 
 #schedule {
   padding-bottom: 1%;
+  
 }
+
