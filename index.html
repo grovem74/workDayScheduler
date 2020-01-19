@@ -19,8 +19,13 @@
         <p class="lead">A simple calendar app for scheduling your work day</p>
         <p id="date" class="lead"></p>
     </header>
-    <div class="container">
 
+    <div id="schedule" class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div id="status" class="col text-center empty">SAVED!</div>
+            <div class="col"></div>
+        </div>
         <div class="row">
             <div class="col p-0"></div>
             <div id="hour" data-name="9" class="col-1 hours">9am</div>
@@ -230,6 +235,9 @@
             savedTasks.push(savedTask);
             $(this.children).attr("class", "fas fa-lock");
             $(savedTaskDiv).attr({ readonly: "readonly", style: "font-weight: 700" });
+            $("#status").attr("class", "saved");           
+            setTimeout(function(){ $("#status").attr("class", "empty"); }, 500)
+
             myFunction();
 
             $(this).click(unlock);                  
@@ -237,8 +245,8 @@
             function unlock() {
                 $(savedTaskDiv).attr({ readonly: false, style: "" });
                 $(this.children).attr("class", "fas fa-lock-open");
+                $("#status").attr("class", "empty");   
             };
-
         });
 
         // Retrieve from local storage
