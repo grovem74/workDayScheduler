@@ -1,0 +1,64 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+  
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;     
+  }
+  
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 15px solid black;
+  }
+   
+  .saveBtn {
+    border: 0;
+    border-left: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #06AED5;
+    background-color: deepskyblue; 
+    background-position: center; 
+    height: 100%; 
+    width: 100%;    
+  }
+  
+  .saveBtn:hover {
+      opacity: .5;
+  }
+
+.past {
+    background-color:lightgrey;
+    border: none;         
+}
+
+.current {
+    background-color: red;
+    border: none;
+}
+
+.future {
+    background-color: rgb(99, 185, 99);
+    border: none;
+}
+
+.hours {
+    border-top: 1px solid;
+    border-color: lightgray; 
+} 
+
+.divide {
+  margin-bottom: 1px;
+}
+
+#task1, #task2, #task3, #task4, #task5, #task6, #task7, #task8, #task9 {
+    width: 100%;
+    height: 100%;
+} 
+
