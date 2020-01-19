@@ -75,7 +75,6 @@ body {
 
 .saved {
   opacity: 1;
-
 }
 
 #status{  
@@ -84,7 +83,7 @@ body {
 }
 
 #schedule {
-  padding-bottom: 1%;
-  
+  padding-left: 5%;
+  padding-right: 5%;  
 }
 
