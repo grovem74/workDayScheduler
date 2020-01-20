@@ -142,6 +142,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
     <script>
+        $(document).ready(function(){
+
         var currentDate = moment().format('dddd, MMMM Do');
         var currentHour = parseInt(moment().format('HH'));
         var dateEl = document.querySelector("#date");
@@ -214,6 +216,7 @@
         });
 
         $(".saveBtn").click(function () {
+        
             var savedTaskDiv = $(this).parent().siblings().children();
             var savedTask = $(this).parent().siblings().children().val();
             savedTasks.push(savedTask);
@@ -234,9 +237,7 @@
         });
 
         // Retrieve from local storage
-        var localTask1 = JSON.stringify(localStorage.getItem("task1"));
-        var task1 = JSON.parse(localTask1);
-        var task2 = localStorage.getItem("task2");
+ 
 
         function myFunction() {
 
@@ -252,7 +253,6 @@
         };
 
         timeFrame();
-
+    });
     </script>
-
 </html>
